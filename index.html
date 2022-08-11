@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- item 태그 -->
-    <h1>h1 태그</h1>
+    <!-- <h1>h1 태그</h1>
     <h2>h2 태그</h2>
     <h3>h3 태그</h3>
     <h4>h4 태그</h4>
@@ -55,11 +55,11 @@
 
 <label for="name">input your name</label>
 <input type="text" id="name">
-<!-- input과 label을 묶는것 -->
+input과 label을 묶는것 -->
 
 <!-- box -->
 <!-- 박스의 크기가 얼마나 차지 하는지 개발자 도구를 통해 확인!! -->
-<header>안세빈 </header>
+<!-- <header>안세빈 </header>
 <nav>
     <a href="">Menu</a>
     <a href="">Menu</a>
@@ -91,27 +91,90 @@
 </span>
 <span>
     inline의 대표
-</span>
+</span> --> 
 <!-- 박스 형태는 어떤것을 사용해도 무방하지만 구분하기 위해 서로 다른 태그를 쓰는듯 함 -->
 
 
+<!-- css 실습 -->
 
-
-<style>
-    #display{
+<!-- position 연습 -->
+<!-- <style>
+    article{
+        background-color: burlywood;
+        width: 220px;
+        height: 800px;
+    }
+    #display {
         width: 100px;
         height: 100px;
         color: red;
-        background-color: beige;
+        background-color: blue;
+        /* position: relative; 원래 위치에서 이동 */
+        /* position: absolute; */
+        /* position: fixed; */
     }
     .display{
         width: 100px;
         height: 100px;
         color: rebeccapurple;
+        /* position: fixed; */
+        /* position: absolute; 상위요소 article에서 이동 */
+        
         background-color: aqua;
     }
+    #span{
+        width: 100px;
+        height: 100px;
+        background-color:blue;
+        color: red;
+    }
+    .span{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        color: white;
+    }
 </style>
-<div id="display">div</div>
-<div class="display">div2</div>
+<article>
+    <div id="display">
+        div
+    </div>
+    <div class="display">div2</div>
+    <span id="span">1</span>
+    <span class="span">2</span>
+</article> -->
+
+
+<!-- margin, padding, display 연습 -->
+<style>
+    span{
+        width: 100px;
+        height: 100px;
+        /* display: block; */
+        background-color: beige;
+        /* padding: 10px; */
+        text-align: center;
+        border: dashed;
+        /* visibility: collapse; */
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        border-radius: 10px;
+        /* display: inline; */
+        /* margin-top: 20px; */
+        /* padding-top: 20px; */
+        /* visibility: hidden; */
+        /* box-sizing: border-box; padding이 들어와도 원래 크기는 변하지 않음 */
+        background-color: blue;
+    }
+    div:hover{
+        background-color: black;
+    }
+</style>
+<div>div1</div>
+<span>span</span>
+
 </body>
 </html>
