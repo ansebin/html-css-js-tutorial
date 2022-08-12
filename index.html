@@ -146,7 +146,7 @@ input과 label을 묶는것 -->
 
 
 <!-- margin, padding, display 연습 -->
-<style>
+<!-- <style>
     span{
         width: 100px;
         height: 100px;
@@ -174,7 +174,78 @@ input과 label을 묶는것 -->
     }
 </style>
 <div>div1</div>
-<span>span</span>
+<span>span</span> -->
+
+<!-- flex 연습 -->
+<!-- <style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item{
+        flex-basis: 100px;
+        flex-grow: 1;
+        background-color: beige;
+        align-self: center;
+    }
+</style>
+
+<div class="container">
+    <div class="item">helloflex1</div>
+    <div class="item">abc</div>
+    <div class="item">helloflex2</div>
+</div> -->
+
+<!-- grid 연습 -->
+<style>
+    .container{
+        background-color: beige;
+        display: grid;
+        grid-template-areas: 
+                "header header header"
+                "  a     main    b   "
+                "  .      .      .   "
+                "footer footer footer";
+        gap: 20px;
+        /* grid-template-columns: 100px 2fr 1fr; */
+        /* grid-template-columns: repeat(3,1fr); */
+        /* grid-template-columns: repeat(3,minmax(100px,auto)); */
+        /* grid-template-columns: repeat(auto-fit,minmax(20%,auto)); */
+
+        /* grid-template-columns: repeat(auto-fill,minmax(20%,auto)); */
+    }
+    .item{
+        background-color: red;
+    }
+    .item:nth-child(1){
+        grid-area: header;
+    }
+    .item:nth-child(2){
+        grid-area: a;
+    }
+    .item:nth-child(3){
+        grid-area: main;
+    }
+    .item:nth-child(4){
+        grid-area: footer;
+    }
+
+</style>
+
+<div class="container">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+    <div class="item">f</div>
+    <div class="item">g</div>
+    <div class="item">h</div>
+    <div class="item">i</div>
+
+</div>
 
 </body>
 </html>
